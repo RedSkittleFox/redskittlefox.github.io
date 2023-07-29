@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Designing a C++ Thread-Pool
+released: false
 ---
 
 The goal of this blog post is to explore different design aspects of a thread-pool from both the performance and API point of view. This article will explore different task-scheduling policies, different queue types - atomic and lock-based, and different type-erasure methods to store tasks (callable objects). This article will also test the effects of using aligned memory.
