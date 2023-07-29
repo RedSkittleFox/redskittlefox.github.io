@@ -3,15 +3,12 @@ layout: default
 ---
 
 <article class="post">
-  <h1>{{ page.title | reading_time }}</h1>
-  <h1> sus </h1>
+  {% if page.released == false %}
+  <h1 style="text-align:center;color:red">THIS IS A WORKING DRAFT</h1>
+  {% endif %}
+  <h1>{{ page.title }}</h1>
   <div class="entry">
     {{ content }}
   </div>
-
-  <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }} {{content | reading_time}}
-  </div>
-
   {% include disqus.html %}
 </article>
