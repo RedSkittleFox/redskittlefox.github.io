@@ -1,0 +1,150 @@
+// Visual studio theme
+$vs-blue : #4A9AD6;
+$vs-lightblue : #ADD8E6;
+$vs-lightgray : #BFBBAF;
+$vs-lightgreen : #bff1c1;
+$vs-seagreen : #37b887;
+$vs-vanilla : #DAD59C;
+$vs-pink : #DDA0DD;
+$vs-darkpink : #A563BF;
+$vs-comment : #4AA343;
+$vs-constant : #B5CEA5;
+$vs-white : #eee;
+$vs-string : #CC9885;
+// Grays
+$black: #000;
+$darkerGray: #222;
+$darkGray: #333;
+$gray: #666;
+$lightGray: #eee;
+$white: #fff;
+
+// Unhighlighted tokens
+.ts-constant,
+.ts-embedded,
+.ts-delimiter,
+.ts-variable,
+.ts-variable-parameter,
+.ts-punctuation-bracket,
+.ts-punctuation-delimiter,
+.ts-punctuation-special,
+.ts-variable-parameter,  
+.ts-constant,
+.ts-function, 
+.ts-function-builtin,
+.ts-function-macro,
+.ts-function-method,
+.ts-function-macro,
+.ts-conditional,
+.ts-function-method-builtin,
+.ts-include,
+.ts-keyword,
+.ts-operator,
+.ts-tag,
+.ts-variable-builtin,
+.ts-constructor,
+.ts-namespace,
+.ts-type,
+.ts-type-builtin,
+.ts-constant-builtin,
+.ts-escape,
+.ts-number,
+.ts-string,
+.ts-string-escape,
+.ts-string-special-symbol,
+.ts-attribute,
+.ts-property,
+.ts-_bool,
+.ts-_boolean,
+.ts-character,
+.ts-constant-macro
+.ts-float,
+.ts-function-special,
+.ts-injection-content,
+.ts-injection-language,
+.ts-label,
+.ts-local-definition,
+.ts-local-reference,
+.ts-local-scope,
+.ts-repeat,
+.ts-string-special,
+.ts-string-special-regex,
+.ts-symbol
+{
+    // Background color is set to bright red to draw the developer's attention
+    // If a once unused token is now being used, it needs to be handled accordingly
+    // background-color: #ff5555;
+    color: red
+}
+    
+.ts-tag-error
+{
+    color: red
+}
+  
+// Code comments
+.ts-comment
+{
+    color: $vs-comment;
+    font-style: italic;
+}
+
+.ts-keyword
+{
+    color: $vs-blue
+}
+
+.ts-operator
+{
+    color: $vs-lightgray
+}
+
+.ts-type
+{
+    color: $vs-seagreen
+}
+
+.ts-function
+{
+    color: $vs-vanilla
+}
+
+.ts-constant // macro variable
+{ 
+    color: $vs-darkpink
+}
+
+.ts-function-special // macro function
+{ 
+    color: $vs-darkpink
+}
+
+.ts-variable
+{
+    color: $vs-white
+}
+
+.ts-string
+{
+    color: $vs-string
+}
+
+.ts-delimiter
+{
+    color: $vs-lightgray
+}
+
+.ts-number
+{
+    color:$vs-lightgreen
+}
+
+.ts-property
+{
+    color:$vs-pink
+}
+
+.ts-variable-builtin
+{
+    color:$vs-blue
+}
