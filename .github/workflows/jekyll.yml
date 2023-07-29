@@ -43,7 +43,7 @@ jobs:
         id: pages
         uses: actions/configure-pages@v3
       - name: Clone Recursive 
-        run: git submodule update --recursive
+        run: git submodule update --init --recursive
       - name: Fix tree-sitter
         run: ln -s .. tree_sitter_parsers/tree-sitter-cpp/node_modules
       - name: Build with Jekyll
